@@ -2,7 +2,7 @@
 <project version="4">
   <component name="LaravelPint">
     <laravel_pint_settings>
-      <laravel_pint_by_interpreter asDefaultInterpreter="true" interpreter_id="7fffc0e7-1d49-495a-a6f0-912c5a3814c7">
+      <laravel_pint_by_interpreter asDefaultInterpreter="true" interpreter_id="7fffc0e7-1d49-495a-a6f0-912c5a3814c7" tool_path="/app/vendor/bin/pint">
         <option name="timeout" value="30000" />
       </laravel_pint_by_interpreter>
       <LaravelPintConfiguration tool_path="$PROJECT_DIR$/laravel-app/vendor/bin/pint" />
@@ -125,6 +125,7 @@
       <path value="$PROJECT_DIR$/laravel-app/vendor/guzzlehttp/promises" />
       <path value="$PROJECT_DIR$/laravel-app/vendor/guzzlehttp/psr7" />
       <path value="$PROJECT_DIR$/laravel-app/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/laravel-app/vendor/_laravel_idea" />
     </include_path>
   </component>
   <component name="PhpInterpreters">

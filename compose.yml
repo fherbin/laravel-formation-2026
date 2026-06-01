@@ -15,13 +15,6 @@ services:
 
       DB_CONNECTION: sqlite
       DB_DATABASE: /app/database/database.sqlite
-
-      REDIS_HOST: redis
-      REDIS_PORT: 6379
-
-      CACHE_STORE: redis
-      QUEUE_CONNECTION: redis
-      SESSION_DRIVER: redis
     depends_on:
       - redis
     command: >
