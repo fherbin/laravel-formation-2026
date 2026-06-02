@@ -1,5 +1,7 @@
 <?php
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\PreferenceController;
+use App\Http\Controllers\StatsController;
 
 // Route dashboard (protégée, après login)
 Route::middleware('auth')->get('/dashboard', function () {
@@ -9,8 +11,11 @@ Route::middleware('auth')->get('/dashboard', function () {
 // Routes posts (toutes protégées par auth)
 Route::middleware('auth')->group(function () {
     Route::resource('posts', PostController::class);
+    Route::get('/preferences', [PreferenceController::class, 'index'])->name('preferences.index');
+    Route::post('/preferences', [PreferenceController::class, 'store'])->name('preferences.store');
+    Route::get('/stats', [StatsController::class, 'index'])->name('stats.index');
 });
 
 Route::middleware(['auth', 'role:admin'])->group(function () {
-    // Route::post('/cache/flush', ...)->name('cache.flush');
+     Route::post('/cache/flush', [StatsController::class, 'flush'])->name('cache.flush');
 });
