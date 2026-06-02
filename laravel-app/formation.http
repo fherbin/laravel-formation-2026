@@ -1,5 +1,14 @@
 ### GET Tasks
 GET http://localhost:8000/api/tasks
+Authorization: Bearer 1|MXiJYiDbseFt8GS3Wr5hhaWP0tulwQKlddk2pZGQd006ac2f
 
 
-###
+### LOGIN
+POST http://localhost:8000/api/auth/login
+accept: application/json
+Content-Type: application/json
+
+{
+    "email": "nattyebola@gmail.com",
+    "password": "password"
+}
