@@ -17,6 +17,7 @@ services:
       DB_DATABASE: /app/database/database.sqlite
     depends_on:
       - redis
+      - mailpit
     command: >
       sh -c "
         touch /app/database/database.sqlite &&
@@ -34,6 +35,14 @@ services:
     volumes:
       - redis_data:/data
     command: redis-server --appendonly yes
+
+  mailpit:
+    image: axllent/mailpit:latest
+    container_name: laravel-formation-mailpit
+    restart: unless-stopped
+    ports:
+      - "8025:8025"
+      - "1025:1025"
 
 volumes:
   laravel_storage:

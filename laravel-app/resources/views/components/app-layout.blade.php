@@ -19,6 +19,9 @@
         <a href="{{ route('login') }}">Connexion</a>
         <a href="{{ route('register') }}">Inscription</a>
     @endauth
+    @if(auth()->user()?->isAdmin())
+        <a href="{{ route('newsletters.index') }}">Newsletters</a>
+    @endif
 </nav>
 <main class="max-w-5xl mx-auto p-6">
     @isset($header)<h1 class="text-xl font-semibold mb-4">{{ $header }}</h1>@endisset

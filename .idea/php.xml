@@ -149,6 +149,9 @@
       <path value="$PROJECT_DIR$/laravel-app/vendor/pragmarx/google2fa" />
       <path value="$PROJECT_DIR$/laravel-app/vendor/spatie/laravel-package-tools" />
       <path value="$PROJECT_DIR$/laravel-app/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/laravel-app/vendor/symfony/polyfill-php83" />
+      <path value="$PROJECT_DIR$/laravel-app/vendor/laravel/sentinel" />
+      <path value="$PROJECT_DIR$/laravel-app/vendor/laravel/horizon" />
     </include_path>
   </component>
   <component name="PhpInterpreters">

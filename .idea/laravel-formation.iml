@@ -124,8 +124,10 @@
       <excludeFolder url="file://$MODULE_DIR$/laravel-app/vendor/dasprid/enum" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-app/vendor/doctrine/deprecations" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-app/vendor/laravel/fortify" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel-app/vendor/laravel/horizon" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-app/vendor/laravel/passkeys" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-app/vendor/laravel/sanctum" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel-app/vendor/laravel/sentinel" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-app/vendor/paragonie/constant_time_encoding" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-app/vendor/phpdocumentor/reflection-common" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-app/vendor/phpdocumentor/reflection-docblock" />
@@ -136,6 +138,7 @@
       <excludeFolder url="file://$MODULE_DIR$/laravel-app/vendor/spatie/laravel-permission" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-app/vendor/spomky-labs/cbor-php" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-app/vendor/spomky-labs/pki-framework" />
+      <excludeFolder url="file://$MODULE_DIR$/laravel-app/vendor/symfony/polyfill-php83" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-app/vendor/symfony/property-access" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-app/vendor/symfony/property-info" />
       <excludeFolder url="file://$MODULE_DIR$/laravel-app/vendor/symfony/serializer" />
