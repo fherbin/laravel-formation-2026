@@ -44,6 +44,13 @@ services:
       - "8025:8025"
       - "1025:1025"
 
+  selenium:
+    image: selenium/standalone-chrome:latest
+    depends_on:
+      - app
+    volumes:
+      - /dev/shm:/dev/shm
+
 volumes:
   laravel_storage:
   redis_data:
