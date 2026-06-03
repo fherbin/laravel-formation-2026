@@ -45,7 +45,10 @@ services:
       - "1025:1025"
 
   selenium:
-    image: selenium/standalone-chrome:latest
+    image: selenium/standalone-chrome:stable
+    ports:
+      - "4444:4444"
+      - "7900:7900"
     depends_on:
       - app
     volumes:
